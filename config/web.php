@@ -48,6 +48,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                // change default route to index
+                '' => 'main/index',
             ],
         ],
     ],
