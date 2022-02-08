@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use app\models\Pegawai;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Gaji */
@@ -12,7 +14,14 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id_pegawai')->textInput() ?>
+    <?php
+    // Get Array from Database
+    $items_array = $model->getPegawai();
+    // $items_array = Pegawai::find()->select(['id', 'nama'])->asArray()->all();
+    // var_dump($items_array);
+    // die;
+    ?>
+    <?= $form->field($model, 'id_pegawai')->dropDownList($items_array); ?>
 
     <?= $form->field($model, 'gaji_pokok')->textInput() ?>
 

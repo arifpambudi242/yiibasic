@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Gaji', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Tambah Gaji', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); 
@@ -35,14 +35,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'gaji_pokok',
             'tunjangan_istri',
             'tunjangan_anak',
-            //'tunjangan_makan',
+            'tunjangan_makan',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Gaji $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                 }
             ],
-        ],
+        ]
     ]); ?>
 
 
