@@ -25,15 +25,20 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'tempat_lahir') ?>
 
-    <?php // echo $form->field($model, 'tgl_lahir') ?>
+    <?php // echo $form->field($model, 'tgl_lahir') 
+    ?>
 
-    <?php // echo $form->field($model, 'telpon') ?>
+    <?php // echo $form->field($model, 'telpon') 
+    ?>
 
-    <?php // echo $form->field($model, 'agama') ?>
+    <?php // echo $form->field($model, 'agama') 
+    ?>
 
-    <?php // echo $form->field($model, 'alamat') ?>
+    <?php // echo $form->field($model, 'alamat') 
+    ?>
 
-    <?php // echo $form->field($model, 'golongan') ?>
+    <?php // echo $form->field($model, 'golongan') 
+    ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
