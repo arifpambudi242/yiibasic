@@ -67,7 +67,7 @@ AppAsset::register($this);
             <?= Alert::widget() ?>
             <?= $content ?>
         </div>
-    </main>
+    </main>```
 
     <footer class="footer mt-auto py-3 text-muted">
         <div class="container">
